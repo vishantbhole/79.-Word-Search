@@ -36,3 +36,7 @@ if __name__ == "__main__":
     board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
     word = "ABCCED"
     print("Output is : ", sol.existWordSearch(board, word))
+
+    board2 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+    word2 = "SEE"
+    print("Output is : ", sol.existWordSearch(board2, word2))
