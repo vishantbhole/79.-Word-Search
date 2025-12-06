@@ -25,4 +25,9 @@ class Solution:
                    dfs(r, c - 1, i + 1))
             path.remove((r, c))
             return res
+            
+        for r in range(ROWS):
+            for c in range(COLS):
+                if dfs(r, c, 0): return True
+        return False
 
