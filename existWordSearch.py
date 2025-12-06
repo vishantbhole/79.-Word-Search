@@ -17,3 +17,12 @@ class Solution:
                     word[i] != board[r][c] or
                     (r, c) in path):
                 return False
+            path.add((r, c))
+            
+            res = (dfs(r + 1, c, i + 1) or
+                   dfs(r - 1, c, i + 1) or
+                   dfs(r, c + 1, i + 1) or
+                   dfs(r, c - 1, i + 1))
+            path.remove((r, c))
+            return res
+
